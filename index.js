@@ -14,16 +14,21 @@ function render(){
     bookEl.innerHTML=
     `
       <div class="card-body">
-        <h5 class="card-title">${bookOb.title }</h5>
-        <h5 class="card-title">${bookOb.author}</h5>
+        <h3 class="card-title">${bookOb.title }</h5>
+        <h4 class="card-title">${bookOb.author}</h5>
         <h5 class="card-title">${bookOb.pages }</h5>
         <div style="display:flex;justify-content:space-between;">
-          <a href="#" class="btn btn-secondary">Remove</a>
-          <a href="#" class="btn btn-primary">Button</a>
+          <button style="margin:10px 15px" class="btn btn-secondary"onclick="removeBook(${i})">Remove</button>
+          <a href="#" style="margin:10px 15px" class="btn btn-primary"  ">Read</a>
         </div>
       </div>`
     book.appendChild(bookEl)
   }
+}
+function removeBook(index){
+myLibrary.splice(index,1)
+console.log(index)
+render();
 }
 function addBookToLibrary() {
   title =document.querySelector(".title").value
