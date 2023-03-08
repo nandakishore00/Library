@@ -11,13 +11,12 @@ font-size:25px;
 }
 .details{
     /* text-align: center; */
-    width: 100%;
     display: none;
     /* align-items: center; */
     justify-content: center;
     padding: 50px 20px;
 }
-.card{
+.card-container{
     background-color: aquamarine;
     text-align: center;
     box-shadow: 4px 4px 4px 4px papayawhip;
@@ -38,4 +37,15 @@ font-size:25px;
 }
 label{
     text-align: center;
+}
+.card-body{
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 2em;
+    width: fit-content;
+    font-size: large;
+    box-shadow: 4px 4px 4px 4px papayawhip;  
+}
+.card{
+
 }
