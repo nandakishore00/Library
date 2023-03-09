@@ -5,9 +5,15 @@ body{
 .new-book{
 border:2px solid rgb(45, 241, 176);
 background-color:aquamarine;
-padding:25px;
+box-shadow: 0px 0px 10px 7px rgb(253, 150, 167);
+
+padding:20px;
 border-radius:10px;
-font-size:25px;
+font-size:20px;
+}
+.new-book:hover{
+    background-color: rgb(24, 232, 163);
+    border: 2px solid rgb(44, 211, 156);
 }
 .details{
     /* text-align: center; */
@@ -19,8 +25,9 @@ font-size:25px;
 .card-container{
     background-color: aquamarine;
     text-align: center;
-    box-shadow: 4px 4px 4px 4px papayawhip;
-    font-size: 15px;
+    box-shadow: 0px 4px 4px 5px rgba(164, 2, 94,0.35);
+    border-radius:10px;
+        font-size: 15px;
 
 }
 .form-group{
@@ -42,7 +49,8 @@ label{
     background-color: aquamarine;
     text-align: center;
     padding:10px;
-    box-shadow: 4px 4px 4px 4px papayawhip;  
+    border-radius:10px;
+    box-shadow: 0px 4px 4px 5px rgba(164, 2, 94,0.35);
 }
 .render-cards{
     display:grid;
